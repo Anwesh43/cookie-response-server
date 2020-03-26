@@ -1,0 +1,11 @@
+<body>
+    <h1 id = "getresp">Getting Response</h1>
+    <script>
+        setTimeout(() => {
+            fetch('http://localhost:8300/hello').then(res=>res.text()).then((text) => {
+                document.getElementById('getresp').innerHTML = text
+            })
+        }, 4000)
+
+    </script>
+</body>
